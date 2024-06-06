@@ -118,6 +118,10 @@ class DataTransformation:
 
             transformed_test_df = pd.DataFrame(np.c_[transformed_test_df, dependent_test_Y])
 
+            transformed_train_df.rename(columns={12 : 'Credit_score'}, inplace=True)
+
+            transformed_test_df.rename(columns={12 : 'Credit_score'}, inplace=True)
+
             transformed_train_df.to_csv(os.path.join(self.config.root_dir, 'transformed_train_df.csv'), index = False, header = True)
 
             transformed_test_df.to_csv(os.path.join(self.config.root_dir, 'transformed_test_df.csv'), index = False, header = True)

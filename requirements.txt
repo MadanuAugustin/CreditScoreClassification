@@ -14,5 +14,7 @@ types-PyYAML
 Flask
 Flask-Cors
 pathlib
+dagshub
+mlflow
 mysql-connector-python
 -e .    ##-e . triggers the setup.py
