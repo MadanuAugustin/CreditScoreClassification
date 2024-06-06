@@ -3,6 +3,7 @@ import sys
 from src.CreditScoreClassification.logger_file.logger_obj import logger
 from src.CreditScoreClassification.pipeline.stage_01_dataIngestion import DataIngestionTrainingPipeline
 from src.CreditScoreClassification.pipeline.stage_02_dataValidation import DataValidationTrainingPipeline
+from src.CreditScoreClassification.pipeline.stage_03_dataTransformation import DataTransformationPipeline
 from src.CreditScoreClassification.Exception.custom_exception import CustomException
 
 STAGE_NAME = 'Data Ingestion Stage'
@@ -28,5 +29,15 @@ try:
     data_validation = DataValidationTrainingPipeline()
     data_validation.main()
     logger.info(f'-----------------stage {STAGE_NAME} completed-----------------------')
+except Exception as e:
+    raise CustomException(e, sys)
+
+
+STAGE_NAME = "Data Transformation Stage"
+
+try:
+    logger.info(f'-----------stage {STAGE_NAME} started------------------------')
+    datatransformation = DataTransformationPipeline()
+    datatransformation.main()
 except Exception as e:
     raise CustomException(e, sys)
