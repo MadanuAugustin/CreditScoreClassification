@@ -1,5 +1,4 @@
 
-
 pandas
 mlflow == 2.13.1
 notebook
@@ -11,7 +10,7 @@ tqdm
 ensure == 1.0.4
 joblib
 types-PyYAML
-Flask
+Flask == 3.0.3
 Flask-Cors
 pathlib
 dagshub

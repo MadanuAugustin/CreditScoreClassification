@@ -2,6 +2,7 @@ import os
 import sys
 import numpy as np
 import pandas as pd
+import joblib
 from src.CreditScoreClassification.entity.config_entity import DataTransformationConfig
 from sklearn.model_selection import train_test_split
 from src.CreditScoreClassification.logger_file.logger_obj import logger
@@ -111,6 +112,8 @@ class DataTransformation:
             preprocessor_obj = self.preprocessor_fun()
 
             transformed_train_df = preprocessor_obj.fit_transform(independent_train_X)
+
+            joblib.dump(preprocessor_obj, os.path.join(self.config.root_dir, 'preprocessor_obj.joblib'))
 
             transformed_test_df = preprocessor_obj.transform(independent_test_X)
 
