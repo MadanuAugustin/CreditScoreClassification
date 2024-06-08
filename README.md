@@ -1,4 +1,4 @@
-## Credit Score Classification Project
+## Credit Score Classification Project_with_MLflow
 
 This project focuses on utilizing machine learning techniques to classify credit scores. Credit scores play a crucial role in determining an individual's creditworthiness, influencing loan approvals, interest rates, and financial opportunities. By leveraging machine learning algorithms, this project aims to predict credit scores accurately based on relevant features such as financial history, demographics, and credit utilization.
 
@@ -15,6 +15,9 @@ Machine learning algorithms and techniques are explored in this project are:
 ### Evaluation:
 The performance of the model is evaluated using appropriate metrics such as accuracy, precision, recall, and F1-score. Additionally, techniques such as cross-validation and hyperparameter tuning are employed to enhance the robustness and generalization capabilities of the models.
 
+![image](https://github.com/MadanuAugustin/CreditScoreClassification_with_MLflow/assets/119403639/0e33c04b-6688-431e-9722-c7c44d653a51)
+
+
 --- 
 
 ### PROJECT STRUCTURE
@@ -22,6 +25,7 @@ The performance of the model is evaluated using appropriate metrics such as accu
 ![image](https://github.com/MadanuAugustin/CreditScoreClassification_with_MLflow/assets/119403639/ee4c3d5e-fea9-4f64-aed7-cb3aaa446ab2)
 
 ---
+
 ### Final Output:
 
 https://github.com/MadanuAugustin/CreditScoreClassification_with_MLflow/assets/119403639/1a9bcb8e-6328-4570-861f-68a0eb960d98
