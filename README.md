@@ -19,7 +19,7 @@ The performance of the model is evaluated using appropriate metrics such as accu
 
 ### PROJECT STRUCTURE
 
-![image](https://github.com/MadanuAugustin/CreditScoreClassification_with_MLflow/assets/119403639/d5d3b638-bfd3-4f58-9dd3-2b2f51e47f90)
+![image](https://github.com/MadanuAugustin/CreditScoreClassification_with_MLflow/assets/119403639/ee4c3d5e-fea9-4f64-aed7-cb3aaa446ab2)
 
 ---
 ### Final Output:
